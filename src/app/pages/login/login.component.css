@@ -1,1 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body, html {
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+.full-height {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;m
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.image-column {
+  display: none;
+  height: 100vh;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-right: 10px;
+  color: #709085;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form {
+  width: 100%;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-input:focus {
+  border-color: #709085;
+  outline: none;
+  box-shadow: 0 0 5px rgba(112, 144, 133, 0.5);
+}
+
+.form-actions {
+  margin-top: 20px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #709085;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #5a786c;
+}
+
+.switch-view {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.link {
+  color: #709085;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #5a786c;
+}
+
+@media (min-width: 768px) {
+  .image-column {
+    display: block;
+  }
+}

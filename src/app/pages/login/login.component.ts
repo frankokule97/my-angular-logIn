@@ -1,10 +1,14 @@
 import {Component, inject} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {Router} from '@angular/router';
+import {CommonModule} from '@angular/common';
 
 @Component({
   selector: 'app-login',
-  imports: [FormsModule],
+  imports: [
+    FormsModule,
+    CommonModule,
+  ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
